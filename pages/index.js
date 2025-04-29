@@ -20,9 +20,9 @@ export default function Home() {
       ) : (
         <>
           <p>シェイシェイ、こんにちは、Hello, {user.name}</p>
-          <a href="/api/auth/logout">Logout</a>
+          <a href="/api/auth/logout">ログアウト</a>
           <br />
-          <Link href="/protected">Go to Protected Page</Link>
+          <Link href="/protected">会員ページにいく</Link>
         </>
       )}
     </div>
