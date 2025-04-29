@@ -16,7 +16,7 @@ export default function Home() {
 </Head>
       <h1>oWWWWWW!!Welcome</h1>
       {!user ? (
-        <a href="/api/auth/login">Login</a>
+        <a href="/api/auth/login">ログイン</a>
       ) : (
         <>
           <p>シェイシェイ、こんにちは、Hello, {user.name}</p>
