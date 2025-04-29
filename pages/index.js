@@ -14,7 +14,7 @@ export default function Home() {
         <a href="/api/auth/login">Login</a>
       ) : (
         <>
-          <p>Hello, {user.name}</p>
+          <p>oWWWWWW!!Hello, {user.name}</p>
           <a href="/api/auth/logout">Logout</a>
           <br />
           <Link href="/protected">Go to Protected Page</Link>
