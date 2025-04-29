@@ -1,5 +1,6 @@
 import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import { getMicroCMSData } from '../lib/microcms';
+import Link from 'next/link';
 
 export default function Protected({ data }) {
   return (
