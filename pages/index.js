@@ -1,5 +1,6 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from 'next/link';
+import Head from 'next/head'; // 追加
 
 export default function Home() {
   const { user, error, isLoading } = useUser();
@@ -9,6 +10,10 @@ export default function Home() {
 
   return (
     <div>
+    <Head>
+<title>ホーム - oWWWWWW!!Welcome</title>
+<meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
+
       <h1>oWWWWWW!!Welcome</h1>
       {!user ? (
         <a href="/api/auth/login">Login</a>
