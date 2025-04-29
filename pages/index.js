@@ -13,7 +13,7 @@ export default function Home() {
     <Head>
 <title>ホーム - oWWWWWW!!Welcome</title>
 <meta name="description" content="Auth0認証を使ったNext.jsアプリ" />
-
+</Head>
       <h1>oWWWWWW!!Welcome</h1>
       {!user ? (
         <a href="/api/auth/login">Login</a>
