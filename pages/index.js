@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Welcome</h1>
+      <h1>oWWWWWW!!Welcome</h1>
       {!user ? (
         <a href="/api/auth/login">Login</a>
       ) : (
