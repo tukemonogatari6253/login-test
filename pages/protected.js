@@ -11,7 +11,7 @@ export default function Protected({ data }) {
 }
 
 export const getServerSideProps = withPageAuthRequired({
-  async getServerSideProps() {
+  async getServerSideProps(ctx) {
     const data = await getMicroCMSData();
     return { props: { data } };
   }
