@@ -10,9 +10,7 @@ export default function Protected({ data }) {
   );
 }
 
-export const getServerSideProps = withPageAuthRequired({
-  async getServerSideProps(ctx) {
-    const data = await getMicroCMSData();
-    return { props: { data } };
-  }
+export const getServerSideProps = withPageAuthRequired(async (ctx) => {
+  const data = await getMicroCMSData();
+  return { props: { data } };
 });
