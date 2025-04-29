@@ -7,9 +7,9 @@ export default function Protected({ data }) {
     <div>
       <h1>Protected Page</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
-      <a href="/api/auth/logout">Logout</a>
+      <a href="/api/auth/logout">ログアウト</a>
       <br />
-      <Link href="/">Go to Protected Page</Link>
+      <Link href="/">会員ページにいく</Link>
     </div>
   );
 }
